@@ -1,0 +1,18 @@
+# svn
+.svn
+
+# eclipse
+.settings
+.project
+.classpath
+.mymetadata
+
+# idea
+*.iml
+.idea
+
+# maven
+target
+
+# vi
+*.swp

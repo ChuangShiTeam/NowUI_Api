@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.chuangshi.role.mapper.RoleMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="io.chuangshi.role.entity.Role">
+		<id column="role_id" property="roleId" />
+	<result column="system_create_user_id" property="systemCreateUserId" />
+	<result column="system_create_time" property="systemCreateTime" />
+	<result column="system_update_user_id" property="systemUpdateUserId" />
+	<result column="system_update_time" property="systemUpdateTime" />
+	<result column="system_version" property="systemVersion" />
+	<result column="system_status" property="systemStatus" />
+		<result column="app_id" property="appId" />
+		<result column="role_name" property="roleName" />
+		<result column="role_code" property="roleCode" />
+		<result column="role_remark" property="roleRemark" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+	system_create_user_id AS systemCreateUserId,
+	system_create_time AS systemCreateTime,
+	system_update_user_id AS systemUpdateUserId,
+	system_update_time AS systemUpdateTime,
+	system_version AS systemVersion,
+	system_status AS systemStatus,
+        role_id AS roleId, app_id AS appId, role_name AS roleName, role_code AS roleCode, role_remark AS roleRemark
+    </sql>
+
+</mapper>

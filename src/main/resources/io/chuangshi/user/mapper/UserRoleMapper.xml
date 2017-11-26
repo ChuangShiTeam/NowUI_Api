@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.chuangshi.user.mapper.UserRoleMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="io.chuangshi.user.entity.UserRole">
+		<id column="user_role_id" property="userRoleId" />
+		<result column="user_id" property="userId" />
+		<result column="role_id" property="roleId" />
+		<result column="system_create_user_id" property="systemCreateUserId" />
+		<result column="system_create_time" property="systemCreateTime" />
+		<result column="system_update_user_id" property="systemUpdateUserId" />
+		<result column="system_update_time" property="systemUpdateTime" />
+		<result column="system_version" property="systemVersion" />
+		<result column="system_status" property="systemStatus" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_role_id AS userRoleId, user_id AS userId, role_id AS roleId, system_create_user_id AS systemCreateUserId, system_create_time AS systemCreateTime, system_update_user_id AS systemUpdateUserId, system_update_time AS systemUpdateTime, system_version AS systemVersion, system_status AS systemStatus
+    </sql>
+
+</mapper>
