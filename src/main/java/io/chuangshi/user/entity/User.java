@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 
 import io.chuangshi.common.base.CoreEntity;
+import io.chuangshi.user.entity.enums.UserTypeEnum;
 
 /**
  * <p>
@@ -41,7 +42,7 @@ public class User extends CoreEntity<User> {
      * 用户类型
      */
 	@TableField("user_type")
-	private String userType;
+	private UserTypeEnum userType;
     /**
      * 用户账号
      */
@@ -107,11 +108,11 @@ public class User extends CoreEntity<User> {
 		this.objectId = objectId;
 	}
 
-	public String getUserType() {
+	public UserTypeEnum getUserType() {
 		return userType;
 	}
 
-	public void setUserType(String userType) {
+	public void setUserType(UserTypeEnum userType) {
 		this.userType = userType;
 	}
 

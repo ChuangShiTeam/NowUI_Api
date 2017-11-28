@@ -23,11 +23,12 @@ mybatis-plus:
   type-aliases-package: io.chuangshi.**.entity
   typeEnumsPackage: io.chuangshi.**.entity.enums
   global-config:
-    id-type: 2
+    id-type: 3
     field-strategy: 2
     db-column-underline: true
     refresh-mapper: true
     logic-delete-value: 1
+    meta-object-handler: io.chuangshi.common.config.CommonMetaObjectHandler
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false

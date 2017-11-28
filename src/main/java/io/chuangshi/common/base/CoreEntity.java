@@ -16,12 +16,12 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
     /**
      * 创建人id
      */
-    @TableField(value = "system_create_user_id", fill = FieldFill.INSERT)
+    @TableField("system_create_user_id")
     protected String systemCreateUserId;
     /**
      * 创建时间
      */
-    @TableField(value = "system_create_time")
+    @TableField(value = "system_create_time", fill = FieldFill.INSERT)
     protected Date systemCreateTime;
     /**
      * 更新人
@@ -31,18 +31,18 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
     /**
      * 更新时间
      */
-    @TableField("system_update_time")
+    @TableField(value = "system_update_time", fill = FieldFill.INSERT_UPDATE)
     protected Date systemUpdateTime;
     /**
      * 版本号
      */
-    @TableField("system_version")
+    @TableField(value = "system_version", fill = FieldFill.INSERT_UPDATE)
     @Version
     protected Integer systemVersion;
     /**
      * 是否删除
      */
-    @TableField("system_status")
+    @TableField(value = "system_status", fill = FieldFill.INSERT)
     @TableLogic
     protected Boolean systemStatus;
     

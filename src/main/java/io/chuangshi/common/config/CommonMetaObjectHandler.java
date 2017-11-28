@@ -18,6 +18,7 @@ public class CommonMetaObjectHandler extends MetaObjectHandler {
     /**
      * 创建时间、更新时间、版本号、删除标志等字段为空自动填充
      */
+    @Override
     public void insertFill(MetaObject metaObject) {
         //创建时间
         Object system_create_time = getFieldValByName(CoreEntity.SYSTEM_CREATE_TIME, metaObject);
