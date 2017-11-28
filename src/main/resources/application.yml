@@ -21,6 +21,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:/io/chuangshi/**/*Mapper.xml
   type-aliases-package: io.chuangshi.**.entity
+  typeEnumsPackage: io.chuangshi.**.entity.enums
   global-config:
     id-type: 2
     field-strategy: 2

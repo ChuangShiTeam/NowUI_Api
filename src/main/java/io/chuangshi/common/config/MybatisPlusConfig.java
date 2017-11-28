@@ -26,6 +26,8 @@ import java.util.List;
 @MapperScan("io.chuangshi.**.mapper")
 public class MybatisPlusConfig {
     
+    
+    
     @Bean
     public OptimisticLockerInterceptor optimisticLockerInterceptor() {
         return new OptimisticLockerInterceptor();
@@ -39,7 +41,7 @@ public class MybatisPlusConfig {
     public PerformanceInterceptor performanceInterceptor() {
         PerformanceInterceptor performanceInterceptor = new PerformanceInterceptor();
         
-        performanceInterceptor.setMaxTime(100); //maxTime SQL 执行最大时长，超过自动停止运行，有助于发现问题
+        performanceInterceptor.setMaxTime(1000); //maxTime SQL 执行最大时长，超过自动停止运行，有助于发现问题
         performanceInterceptor.setFormat(true); //format SQL SQL是否格式化，默认false
         
         return performanceInterceptor;

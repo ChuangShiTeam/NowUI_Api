@@ -4,7 +4,9 @@ import java.util.Date;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableLogic;
 import com.baomidou.mybatisplus.annotations.Version;
+import com.baomidou.mybatisplus.enums.FieldFill;
 
 /**
  * 实体父类
@@ -14,12 +16,12 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
     /**
      * 创建人id
      */
-    @TableField("system_create_user_id")
+    @TableField(value = "system_create_user_id", fill = FieldFill.INSERT)
     protected String systemCreateUserId;
     /**
      * 创建时间
      */
-    @TableField("system_create_time")
+    @TableField(value = "system_create_time")
     protected Date systemCreateTime;
     /**
      * 更新人
@@ -41,6 +43,7 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
      * 是否删除
      */
     @TableField("system_status")
+    @TableLogic
     protected Boolean systemStatus;
     
     public String getSystemCreateUserId() {
@@ -91,5 +94,16 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
         this.systemStatus = systemStatus;
     }
     
+    public static final String SYSTEM_CREATE_USER_ID = "system_create_user_id";
+
+    public static final String SYSTEM_CREATE_TIME = "system_create_time";
+
+    public static final String SYSTEM_UPDATE_USER_ID = "system_update_user_id";
+
+    public static final String SYSTEM_UPDATE_TIME = "system_update_time";
+
+    public static final String SYSTEM_VERSION = "system_version";
+
+    public static final String SYSTEM_STATUS = "system_status";
     
 }
