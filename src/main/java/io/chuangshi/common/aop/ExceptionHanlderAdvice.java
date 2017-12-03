@@ -1,12 +1,13 @@
 package io.chuangshi.common.aop;
 
-import io.chuangshi.common.result.ResultBean;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 
-@ControllerAdvice
+import io.chuangshi.common.result.ResultBean;
+
+@RestControllerAdvice
 public class ExceptionHanlderAdvice {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
