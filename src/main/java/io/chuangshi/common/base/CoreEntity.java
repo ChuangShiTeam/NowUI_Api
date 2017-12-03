@@ -36,7 +36,7 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
     /**
      * 版本号
      */
-    @TableField("system_version")
+    @TableField(value = "system_version", fill = FieldFill.INSERT)
     @Version
     protected Integer systemVersion;
     /**
