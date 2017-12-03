@@ -59,11 +59,11 @@ public class RoleResource extends CoreEntity<RoleResource> {
 		this.resourceId = resourceId;
 	}
 
-	public static final String ROLE_RESOURCE_ID = "role_resource_id";
+	public static final String ROLE_RESOURCE_ID = "roleResourceId";
 
-	public static final String ROLE_ID = "role_id";
+	public static final String ROLE_ID = "roleId";
 
-	public static final String RESOURCE_ID = "resource_id";
+	public static final String RESOURCE_ID = "resourceId";
 
 	@Override
 	protected Serializable pkVal() {

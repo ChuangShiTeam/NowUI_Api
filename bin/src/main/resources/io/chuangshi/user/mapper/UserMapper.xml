@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.chuangshi.user.mapper.UserMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="io.chuangshi.user.entity.User">
+		<id column="user_id" property="userId" />
+		<result column="app_id" property="appId" />
+		<result column="object_id" property="objectId" />
+		<result column="user_type" property="userType" />
+		<result column="user_account" property="userAccount" />
+		<result column="user_mobile" property="userMobile" />
+		<result column="user_email" property="userEmail" />
+		<result column="user_password" property="userPassword" />
+		<result column="user_name" property="userName" />
+		<result column="user_avatar" property="userAvatar" />
+		<result column="wechat_open_id" property="wechatOpenId" />
+		<result column="wechat_union_id" property="wechatUnionId" />
+		<result column="system_create_user_id" property="systemCreateUserId" />
+		<result column="system_create_time" property="systemCreateTime" />
+		<result column="system_update_user_id" property="systemUpdateUserId" />
+		<result column="system_update_time" property="systemUpdateTime" />
+		<result column="system_version" property="systemVersion" />
+		<result column="system_status" property="systemStatus" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id AS userId, app_id AS appId, object_id AS objectId, user_type AS userType, user_account AS userAccount, user_mobile AS userMobile, user_email AS userEmail, user_password AS userPassword, user_name AS userName, user_avatar AS userAvatar, wechat_open_id AS wechatOpenId, wechat_union_id AS wechatUnionId, system_create_user_id AS systemCreateUserId, system_create_time AS systemCreateTime, system_update_user_id AS systemUpdateUserId, system_update_time AS systemUpdateTime, system_version AS systemVersion, system_status AS systemStatus
+    </sql>
+
+</mapper>

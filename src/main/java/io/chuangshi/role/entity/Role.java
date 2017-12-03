@@ -88,15 +88,15 @@ public class Role extends CoreEntity<Role> {
 		this.roleRemark = roleRemark;
 	}
 
-	public static final String ROLE_ID = "role_id";
+	public static final String ROLE_ID = "roleId";
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String ROLE_NAME = "role_name";
+	public static final String ROLE_NAME = "roleName";
 
-	public static final String ROLE_CODE = "role_code";
+	public static final String ROLE_CODE = "roleCode";
 
-	public static final String ROLE_REMARK = "role_remark";
+	public static final String ROLE_REMARK = "roleRemark";
 
 	@Override
 	protected Serializable pkVal() {

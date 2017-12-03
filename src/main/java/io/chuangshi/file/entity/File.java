@@ -166,27 +166,27 @@ public class File extends CoreEntity<File> {
 		this.fileIsExternal = fileIsExternal;
 	}
 
-	public static final String FILE_ID = "file_id";
+	public static final String FILE_ID = "fileId";
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String FILE_TYPE = "file_type";
+	public static final String FILE_TYPE = "fileType";
 
-	public static final String FILE_NAME = "file_name";
+	public static final String FILE_NAME = "fileName";
 
-	public static final String FILE_SUFFIX = "file_suffix";
+	public static final String FILE_SUFFIX = "fileSuffix";
 
-	public static final String FILE_SIZE = "file_size";
+	public static final String FILE_SIZE = "fileSize";
 
-	public static final String FILE_PATH = "file_path";
+	public static final String FILE_PATH = "filePath";
 
-	public static final String FILE_THUMBNAIL_PATH = "file_thumbnail_path";
+	public static final String FILE_THUMBNAIL_PATH = "fileThumbnailPath";
 
-	public static final String FILE_ORIGINAL_PATH = "file_original_path";
+	public static final String FILE_ORIGINAL_PATH = "fileOriginalPath";
 
-	public static final String FILE_IMAGE = "file_image";
+	public static final String FILE_IMAGE = "fileImage";
 
-	public static final String FILE_IS_EXTERNAL = "file_is_external";
+	public static final String FILE_IS_EXTERNAL = "fileIsExternal";
 
 	@Override
 	protected Serializable pkVal() {

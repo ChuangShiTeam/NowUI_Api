@@ -49,12 +49,5 @@ public class CommonMetaObjectHandler extends MetaObjectHandler {
         if (system_update_time == null) {
             setFieldValByName(CoreEntity.SYSTEM_UPDATE_TIME, new Date(), metaObject);
         }
-        //版本号
-        Object system_version = getFieldValByName(CoreEntity.SYSTEM_VERSION, metaObject);
-        if (system_version == null) {
-            setFieldValByName(CoreEntity.SYSTEM_VERSION, 0, metaObject);
-        } else {
-            setFieldValByName(CoreEntity.SYSTEM_VERSION, (Integer) system_version + 1, metaObject);
-        }
     }
 }

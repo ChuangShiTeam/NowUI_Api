@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.FieldStrategy;
 
 import io.chuangshi.common.base.CoreEntity;
 
@@ -14,7 +15,7 @@ import io.chuangshi.common.base.CoreEntity;
  * </p>
  *
  * @author marcus
- * @since 2017-11-26
+ * @since 2017-12-02
  */
 @TableName("table_app")
 public class App extends CoreEntity<App> {
@@ -59,11 +60,11 @@ public class App extends CoreEntity<App> {
 		this.appDescription = appDescription;
 	}
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String APP_NAME = "app_name";
+	public static final String APP_NAME = "appName";
 
-	public static final String APP_DESCRIPTION = "app_description";
+	public static final String APP_DESCRIPTION = "appDescription";
 
 	@Override
 	protected Serializable pkVal() {

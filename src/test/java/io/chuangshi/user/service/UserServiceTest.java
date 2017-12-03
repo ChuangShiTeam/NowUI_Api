@@ -25,7 +25,7 @@ public class UserServiceTest {
     
     @Test
     public void insert() throws Exception {
-        Timor timor = new Timor("insert start");
+        Timor timor = new Timor("insert user");
         User user = new User();
         user.setAppId("22222");
         user.setObjectId("33333");
@@ -41,12 +41,29 @@ public class UserServiceTest {
         user.setSystemCreateUserId("123456");
         user.setSystemUpdateUserId("123456");
         userService.insert(user);
-        timor.timeEnd("insert success");
+        timor.timeEnd("insert user");
     }
     
     @Test
-    public void update() throws Exception {
-        
+    public void updateAllColumnById() throws Exception {
+    	Timor timor = new Timor("updateAllColumnById user");
+        User user = new User();
+        user.setUserId("3615304b2ad4466097fd0d8537bb7ffb");
+        user.setAppId("22222");
+        user.setObjectId("33333");
+        user.setUserAccount("111111");
+        user.setUserAvatar("89888");
+        user.setUserEmail("33333");
+        user.setUserMobile("888888");
+        user.setUserName("888888");
+        user.setUserPassword("123456");
+        user.setUserType(UserTypeEnum.ADMIN);
+        user.setWechatOpenId("888888");
+        user.setWechatUnionId("99999");
+        user.setSystemCreateUserId("123456");
+        user.setSystemUpdateUserId("123456");
+        userService.updateAllColumnById(user);
+        timor.timeEnd("updateAllColumnById user");
     }
 
     @Test

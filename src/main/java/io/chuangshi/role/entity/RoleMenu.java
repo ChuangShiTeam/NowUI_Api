@@ -59,11 +59,11 @@ public class RoleMenu extends CoreEntity<RoleMenu> {
 		this.menuId = menuId;
 	}
 
-	public static final String ROLE_MENU_ID = "role_menu_id";
+	public static final String ROLE_MENU_ID = "roleMenuId";
 
-	public static final String ROLE_ID = "role_id";
+	public static final String ROLE_ID = "roleId";
 
-	public static final String MENU_ID = "menu_id";
+	public static final String MENU_ID = "menuId";
 
 	@Override
 	protected Serializable pkVal() {

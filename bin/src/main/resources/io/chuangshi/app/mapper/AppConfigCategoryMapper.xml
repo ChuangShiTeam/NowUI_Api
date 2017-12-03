@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.chuangshi.app.mapper.AppConfigCategoryMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="io.chuangshi.app.entity.AppConfigCategory">
+		<id column="config_category_id" property="configCategoryId" />
+	<result column="system_create_user_id" property="systemCreateUserId" />
+	<result column="system_create_time" property="systemCreateTime" />
+	<result column="system_update_user_id" property="systemUpdateUserId" />
+	<result column="system_update_time" property="systemUpdateTime" />
+	<result column="system_version" property="systemVersion" />
+	<result column="system_status" property="systemStatus" />
+		<result column="app_id" property="appId" />
+		<result column="config_category_name" property="configCategoryName" />
+		<result column="config_category_code" property="configCategoryCode" />
+		<result column="config_category_description" property="configCategoryDescription" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+	system_create_user_id AS systemCreateUserId,
+	system_create_time AS systemCreateTime,
+	system_update_user_id AS systemUpdateUserId,
+	system_update_time AS systemUpdateTime,
+	system_version AS systemVersion,
+	system_status AS systemStatus,
+        config_category_id AS configCategoryId, app_id AS appId, config_category_name AS configCategoryName, config_category_code AS configCategoryCode, config_category_description AS configCategoryDescription
+    </sql>
+
+</mapper>

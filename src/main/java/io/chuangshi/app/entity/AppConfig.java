@@ -14,7 +14,7 @@ import io.chuangshi.common.base.CoreEntity;
  * </p>
  *
  * @author marcus
- * @since 2017-11-26
+ * @since 2017-12-02
  */
 @TableName("table_app_config")
 public class AppConfig extends CoreEntity<AppConfig> {
@@ -114,19 +114,19 @@ public class AppConfig extends CoreEntity<AppConfig> {
 		this.configDescription = configDescription;
 	}
 
-	public static final String CONFIG_ID = "config_id";
+	public static final String CONFIG_ID = "configId";
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String CONFIG_CATEGORY_ID = "config_category_id";
+	public static final String CONFIG_CATEGORY_ID = "configCategoryId";
 
-	public static final String CONFIG_KEY = "config_key";
+	public static final String CONFIG_KEY = "configKey";
 
-	public static final String CONFIG_VALUE = "config_value";
+	public static final String CONFIG_VALUE = "configValue";
 
-	public static final String CONFIG_IS_DISABLED = "config_is_disabled";
+	public static final String CONFIG_IS_DISABLED = "configIsDisabled";
 
-	public static final String CONFIG_DESCRIPTION = "config_description";
+	public static final String CONFIG_DESCRIPTION = "configDescription";
 
 	@Override
 	protected Serializable pkVal() {

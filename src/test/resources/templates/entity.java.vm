@@ -108,7 +108,7 @@ public class ${entity} implements Serializable {
 
 #if(${entityColumnConstant})
 #foreach($field in ${table.fields})
-	public static final String ${field.name.toUpperCase()} = "${field.name}";
+	public static final String ${field.name.toUpperCase()} = "${field.propertyName}";
 
 #end
 #end

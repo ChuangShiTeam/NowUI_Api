@@ -14,7 +14,7 @@ import io.chuangshi.common.base.CoreEntity;
  * </p>
  *
  * @author marcus
- * @since 2017-11-23
+ * @since 2017-12-02
  */
 @TableName("table_user_role")
 public class UserRole extends CoreEntity<UserRole> {
@@ -33,6 +33,7 @@ public class UserRole extends CoreEntity<UserRole> {
      */
 	@TableField("role_id")
 	private String roleId;
+
 
 	public String getUserRoleId() {
 		return userRoleId;
@@ -58,11 +59,11 @@ public class UserRole extends CoreEntity<UserRole> {
 		this.roleId = roleId;
 	}
 
-	public static final String USER_ROLE_ID = "user_role_id";
+	public static final String USER_ROLE_ID = "userRoleId";
 
-	public static final String USER_ID = "user_id";
+	public static final String USER_ID = "userId";
 
-	public static final String ROLE_ID = "role_id";
+	public static final String ROLE_ID = "roleId";
 
 	@Override
 	protected Serializable pkVal() {
@@ -75,12 +76,6 @@ public class UserRole extends CoreEntity<UserRole> {
 			"userRoleId=" + userRoleId +
 			", userId=" + userId +
 			", roleId=" + roleId +
-			", systemCreateUserId=" + systemCreateUserId +
-			", systemCreateTime=" + systemCreateTime +
-			", systemUpdateUserId=" + systemUpdateUserId +
-			", systemUpdateTime=" + systemUpdateTime +
-			", systemVersion=" + systemVersion +
-			", systemStatus=" + systemStatus +
 			"}";
 	}
 }

@@ -88,15 +88,15 @@ public class Resource extends CoreEntity<Resource> {
 		this.resourceUrl = resourceUrl;
 	}
 
-	public static final String RESOURCE_ID = "resource_id";
+	public static final String RESOURCE_ID = "resourceId";
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String RESOURCE_TYPE = "resource_type";
+	public static final String RESOURCE_TYPE = "resourceType";
 
-	public static final String RESOURCE_NAME = "resource_name";
+	public static final String RESOURCE_NAME = "resourceName";
 
-	public static final String RESOURCE_URL = "resource_url";
+	public static final String RESOURCE_URL = "resourceUrl";
 
 	@Override
 	protected Serializable pkVal() {

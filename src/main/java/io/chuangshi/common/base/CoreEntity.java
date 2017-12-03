@@ -36,7 +36,7 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
     /**
      * 版本号
      */
-    @TableField(value = "system_version", fill = FieldFill.INSERT_UPDATE)
+    @TableField("system_version")
     @Version
     protected Integer systemVersion;
     /**
@@ -94,16 +94,16 @@ public abstract class CoreEntity<T extends Model> extends Model<T> {
         this.systemStatus = systemStatus;
     }
     
-    public static final String SYSTEM_CREATE_USER_ID = "system_create_user_id";
+    public static final String SYSTEM_CREATE_USER_ID = "systemCreateUserId";
 
-    public static final String SYSTEM_CREATE_TIME = "system_create_time";
+    public static final String SYSTEM_CREATE_TIME = "systemCreateTime";
 
-    public static final String SYSTEM_UPDATE_USER_ID = "system_update_user_id";
+    public static final String SYSTEM_UPDATE_USER_ID = "systemUpdateUserId";
 
-    public static final String SYSTEM_UPDATE_TIME = "system_update_time";
+    public static final String SYSTEM_UPDATE_TIME = "systemUpdateTime";
 
-    public static final String SYSTEM_VERSION = "system_version";
+    public static final String SYSTEM_VERSION = "systemVersion";
 
-    public static final String SYSTEM_STATUS = "system_status";
+    public static final String SYSTEM_STATUS = "systemStatus";
     
 }

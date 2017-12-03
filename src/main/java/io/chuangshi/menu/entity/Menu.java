@@ -101,17 +101,17 @@ public class Menu extends CoreEntity<Menu> {
 		this.menuType = menuType;
 	}
 
-	public static final String MENU_ID = "menu_id";
+	public static final String MENU_ID = "menuId";
 
-	public static final String APP_ID = "app_id";
+	public static final String APP_ID = "appId";
 
-	public static final String PARENT_ID = "parent_id";
+	public static final String PARENT_ID = "parentId";
 
-	public static final String MENU_NAME = "menu_name";
+	public static final String MENU_NAME = "menuName";
 
-	public static final String MENU_URL = "menu_url";
+	public static final String MENU_URL = "menuUrl";
 
-	public static final String MENU_TYPE = "menu_type";
+	public static final String MENU_TYPE = "menuType";
 
 	@Override
 	protected Serializable pkVal() {

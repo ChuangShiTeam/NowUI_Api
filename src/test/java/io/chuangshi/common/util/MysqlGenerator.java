@@ -94,7 +94,7 @@ public class MysqlGenerator {
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
-                        .setInclude(new String[]{"table_app", "table_app_config", "table_app_config_category"})
+                        .setInclude(new String[]{"table_app", "table_app_config_category", "table_app_config"})
                         // .setInclude(new String[] { "user" }) // 需要生成的表
                         // .setExclude(new String[]{"test"}) // 排除生成的表
                         // .setCapitalMode(true)// 全局大写命名

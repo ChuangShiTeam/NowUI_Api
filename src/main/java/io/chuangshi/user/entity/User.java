@@ -1,7 +1,6 @@
 package io.chuangshi.user.entity;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
@@ -16,7 +15,7 @@ import io.chuangshi.user.entity.enums.UserTypeEnum;
  * </p>
  *
  * @author marcus
- * @since 2017-11-23
+ * @since 2017-12-02
  */
 @TableName("table_user")
 public class User extends CoreEntity<User> {
@@ -83,6 +82,7 @@ public class User extends CoreEntity<User> {
      */
 	@TableField("wechat_union_id")
 	private String wechatUnionId;
+
 
 	public String getUserId() {
 		return userId;
@@ -180,89 +180,29 @@ public class User extends CoreEntity<User> {
 		this.wechatUnionId = wechatUnionId;
 	}
 
-	public String getSystemCreateUserId() {
-		return systemCreateUserId;
-	}
+	public static final String USER_ID = "userId";
 
-	public void setSystemCreateUserId(String systemCreateUserId) {
-		this.systemCreateUserId = systemCreateUserId;
-	}
+	public static final String APP_ID = "appId";
 
-	public Date getSystemCreateTime() {
-		return systemCreateTime;
-	}
+	public static final String OBJECT_ID = "objectId";
 
-	public void setSystemCreateTime(Date systemCreateTime) {
-		this.systemCreateTime = systemCreateTime;
-	}
+	public static final String USER_TYPE = "userType";
 
-	public String getSystemUpdateUserId() {
-		return systemUpdateUserId;
-	}
+	public static final String USER_ACCOUNT = "userAccount";
 
-	public void setSystemUpdateUserId(String systemUpdateUserId) {
-		this.systemUpdateUserId = systemUpdateUserId;
-	}
+	public static final String USER_MOBILE = "userMobile";
 
-	public Date getSystemUpdateTime() {
-		return systemUpdateTime;
-	}
+	public static final String USER_EMAIL = "userEmail";
 
-	public void setSystemUpdateTime(Date systemUpdateTime) {
-		this.systemUpdateTime = systemUpdateTime;
-	}
+	public static final String USER_PASSWORD = "userPassword";
 
-	public Integer getSystemVersion() {
-		return systemVersion;
-	}
+	public static final String USER_NAME = "userName";
 
-	public void setSystemVersion(Integer systemVersion) {
-		this.systemVersion = systemVersion;
-	}
+	public static final String USER_AVATAR = "userAvatar";
 
-	public Boolean getSystemStatus() {
-		return systemStatus;
-	}
+	public static final String WECHAT_OPEN_ID = "wechatOpenId";
 
-	public void setSystemStatus(Boolean systemStatus) {
-		this.systemStatus = systemStatus;
-	}
-
-	public static final String USER_ID = "user_id";
-
-	public static final String APP_ID = "app_id";
-
-	public static final String OBJECT_ID = "object_id";
-
-	public static final String USER_TYPE = "user_type";
-
-	public static final String USER_ACCOUNT = "user_account";
-
-	public static final String USER_MOBILE = "user_mobile";
-
-	public static final String USER_EMAIL = "user_email";
-
-	public static final String USER_PASSWORD = "user_password";
-
-	public static final String USER_NAME = "user_name";
-
-	public static final String USER_AVATAR = "user_avatar";
-
-	public static final String WECHAT_OPEN_ID = "wechat_open_id";
-
-	public static final String WECHAT_UNION_ID = "wechat_union_id";
-
-	public static final String SYSTEM_CREATE_USER_ID = "system_create_user_id";
-
-	public static final String SYSTEM_CREATE_TIME = "system_create_time";
-
-	public static final String SYSTEM_UPDATE_USER_ID = "system_update_user_id";
-
-	public static final String SYSTEM_UPDATE_TIME = "system_update_time";
-
-	public static final String SYSTEM_VERSION = "system_version";
-
-	public static final String SYSTEM_STATUS = "system_status";
+	public static final String WECHAT_UNION_ID = "wechatUnionId";
 
 	@Override
 	protected Serializable pkVal() {
@@ -284,12 +224,6 @@ public class User extends CoreEntity<User> {
 			", userAvatar=" + userAvatar +
 			", wechatOpenId=" + wechatOpenId +
 			", wechatUnionId=" + wechatUnionId +
-			", systemCreateUserId=" + systemCreateUserId +
-			", systemCreateTime=" + systemCreateTime +
-			", systemUpdateUserId=" + systemUpdateUserId +
-			", systemUpdateTime=" + systemUpdateTime +
-			", systemVersion=" + systemVersion +
-			", systemStatus=" + systemStatus +
 			"}";
 	}
 }

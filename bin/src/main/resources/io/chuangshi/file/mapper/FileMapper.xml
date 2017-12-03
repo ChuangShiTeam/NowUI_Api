@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.chuangshi.file.mapper.FileMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="io.chuangshi.file.entity.File">
+		<id column="file_id" property="fileId" />
+	<result column="system_create_user_id" property="systemCreateUserId" />
+	<result column="system_create_time" property="systemCreateTime" />
+	<result column="system_update_user_id" property="systemUpdateUserId" />
+	<result column="system_update_time" property="systemUpdateTime" />
+	<result column="system_version" property="systemVersion" />
+	<result column="system_status" property="systemStatus" />
+		<result column="app_id" property="appId" />
+		<result column="file_type" property="fileType" />
+		<result column="file_name" property="fileName" />
+		<result column="file_suffix" property="fileSuffix" />
+		<result column="file_size" property="fileSize" />
+		<result column="file_path" property="filePath" />
+		<result column="file_thumbnail_path" property="fileThumbnailPath" />
+		<result column="file_original_path" property="fileOriginalPath" />
+		<result column="file_image" property="fileImage" />
+		<result column="file_is_external" property="fileIsExternal" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+	system_create_user_id AS systemCreateUserId,
+	system_create_time AS systemCreateTime,
+	system_update_user_id AS systemUpdateUserId,
+	system_update_time AS systemUpdateTime,
+	system_version AS systemVersion,
+	system_status AS systemStatus,
+        file_id AS fileId, app_id AS appId, file_type AS fileType, file_name AS fileName, file_suffix AS fileSuffix, file_size AS fileSize, file_path AS filePath, file_thumbnail_path AS fileThumbnailPath, file_original_path AS fileOriginalPath, file_image AS fileImage, file_is_external AS fileIsExternal
+    </sql>
+
+</mapper>
