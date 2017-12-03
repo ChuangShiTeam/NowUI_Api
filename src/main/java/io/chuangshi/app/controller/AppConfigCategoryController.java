@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2017-11-26
  */
 @RestController
-@RequestMapping("/app/app/config/category")
+@RequestMapping("/app/config/category")
 public class AppConfigCategoryController {
 
 }
