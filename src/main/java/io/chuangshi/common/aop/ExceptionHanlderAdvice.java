@@ -9,6 +9,7 @@ import io.chuangshi.common.result.ResultBean;
 
 @RestControllerAdvice
 public class ExceptionHanlderAdvice {
+    
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public ResultBean excpetion(Exception e, WebRequest request) {

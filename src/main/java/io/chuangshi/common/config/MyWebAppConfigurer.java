@@ -1,5 +1,6 @@
 package io.chuangshi.common.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -8,6 +9,11 @@ import io.chuangshi.common.interceptor.AuthVerifyInterceptor;
 
 @Configuration
 public class MyWebAppConfigurer extends WebMvcConfigurerAdapter {
+    
+    @Bean
+    public AuthVerifyInterceptor authVerifyInterceptor() {
+        return new AuthVerifyInterceptor();
+    }
     
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
